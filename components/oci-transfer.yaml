@@ -1,0 +1,25 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: ComponentSubscription
+metadata:
+  name: componentsubscription-test-podinfo
+  namespace: ocm-system
+spec:
+  source:
+    secretRef:
+      name: regcred
+    url: oci://ghcr.io/mohammad-ammar14
+  destination:
+    secretRef:
+      name: regcred-2
+    url: oci://ghcr.io/sidhishruti22
+  component: "github.com/ammar/que"
+  interval: 10m0s
+  semver: "~v1.0.1"
+#   verify:
+#     - signature:
+#         name: alice
+#         key:
+#           name: alice-publickey
+status:
+  latestVersion: "v1.0.1"
+  replicatedVersion: "v1.0.1"
