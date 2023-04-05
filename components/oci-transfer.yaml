@@ -7,11 +7,11 @@ spec:
   source:
     secretRef:
       name: recred
-    url: oci://ghcr.io/mohammad-ammar14
+    url: ghcr.io/mohammad-ammar14
   destination:
     secretRef:
       name: regcred-2
-    url: oci://ghcr.io/sidhishruti22
+    url: ghcr.io/sidhishruti22
   component: "github.com/ammar/que"
   interval: 10m0s
   semver: "v1.0.1"
