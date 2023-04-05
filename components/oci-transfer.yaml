@@ -6,7 +6,7 @@ metadata:
 spec:
   source:
     secretRef:
-      name: regred
+      name: regcred
     url: ghcr.io/mohammad-ammar14
   destination:
     secretRef:
