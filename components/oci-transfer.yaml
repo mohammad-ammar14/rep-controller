@@ -12,14 +12,14 @@ spec:
     secretRef:
       name: regcred-2
     url: ghcr.io/sidhishruti22
-  component: "github.com/ammar/que"
+  component: github.com/ammar/que
   interval: 10m0s
-  semver: "v1.0.1"
+  semver: v1.0.1
 #   verify:
 #     - signature:
 #         name: alice
 #         key:
 #           name: alice-publickey
 status:
-  latestVersion: "v1.0.1"
-  replicatedVersion: "v1.0.1"
+  latestVersion: v1.0.1
+  replicatedVersion: v1.0.1
