@@ -1,18 +1,18 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: ComponentSubscription
 metadata:
-  name: componentsubscription-test-podinfo
+  name: componentsubscription-test
   namespace: ocm-system
 spec:
   source:
     secretRef:
-      name: regcred
+      name: creds
     url: ghcr.io/mohammad-ammar14
   destination:
     secretRef:
-      name: regcred-2
+      name: creds-2
     url: ghcr.io/sidhishruti22
-  component: component-descriptors/github.com/ammar/que
+  component: github.com/ammar/que
   interval: 10m0s
   semver: v1.0.1
   verify:
