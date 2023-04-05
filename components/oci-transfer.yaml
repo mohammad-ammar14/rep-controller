@@ -12,7 +12,7 @@ spec:
     secretRef:
       name: regcred-2
     url: ghcr.io/sidhishruti22
-  component: github.com/ammar/que
+  component: component-descriptors/github.com/ammar/que
   interval: 10m0s
   semver: v1.0.1
   verify:
